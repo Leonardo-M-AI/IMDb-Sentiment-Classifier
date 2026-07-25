@@ -6,13 +6,12 @@ This project compares a simple baseline with two classical machine-learning mode
 
 ## Project Structure
 
-```text
-imdb-sentiment-classifier/
-├── imdb_sentiment_classifier.ipynb
+IMDb-Sentiment-Classifier/
+├── IMDb_Sentiment_Classifier.ipynb
 ├── requirements.txt
 ├── LICENSE
+├── .gitignore
 └── README.md
-```
 
 ## Objective
 
@@ -89,12 +88,10 @@ For Logistic Regression, the learned coefficients show which words or phrases ar
 This does **not** mean those words cause a sentiment. It only shows which textual patterns the model relied on in this specific dataset.
 ## Quick Start
 
-```bash
-git clone https://github.com/Leonardo-M-AI/imdb-sentiment-classifier.git
-cd imdb-sentiment-classifier
+git clone https://github.com/Leonardo-M-AI/IMDb-Sentiment-Classifier.git
+cd IMDb-Sentiment-Classifier
 pip install -r requirements.txt
-jupyter notebook imdb_sentiment_classifier.ipynb
-```
+jupyter notebook IMDb_Sentiment_Classifier.ipynb
 
 ## Requirements
 
