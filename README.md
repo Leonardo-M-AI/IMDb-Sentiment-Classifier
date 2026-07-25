@@ -63,11 +63,26 @@ A fast probabilistic model commonly used as a baseline for text classification.
 A linear classification model trained on TF-IDF text features. It can estimate probabilities and makes the learned word weights inspectable.
 ## Results
 
-The notebook compares all models on the same validation split using accuracy, precision, recall, and F1-score.
+All models were evaluated on the same stratified validation split.
 
-The final selected model is then trained on the complete training set and evaluated once on the untouched official test set.
+| Model | Validation Accuracy | Validation F1-score |
+| --- | ---: | ---: |
+| Dummy Baseline | 50.00% | 0.00% |
+| Multinomial Naive Bayes | 87.94% | 87.89% |
+| Logistic Regression | 88.76% | 88.97% |
 
-> Exact metrics, the confusion matrix, and examples of classification errors are available in the notebook.
+Logistic Regression achieved the best validation performance and was selected as the final model.
+
+### Final Test Performance
+
+The selected model was retrained on the complete 25,000-review training set and evaluated once on the untouched official test set.
+
+| Metric | Score |
+| --- | ---: |
+| Accuracy | 89.49% |
+| Precision | 88.89% |
+| Recall | 90.26% |
+| F1-score | 89.57% |
 
 ## Error Analysis
 
